@@ -40,7 +40,7 @@ Page {
             MouseArea{
                 anchors.fill: parent
                 onClicked: {
-                    switchImage.restart()
+                    root.StackView.view.pop()
                 }
             }
         }
