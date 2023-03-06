@@ -1,0 +1,288 @@
+{
+	"Id": "895627a40542e073b38e74b67f1d2ba33274e935312a30ad4bfea9316b9c1ec5",
+	"Created": "2022-10-27T17:11:08.058324737Z",
+	"Path": "/bin/sh",
+	"Args": [
+		"-c",
+		"echo Container started\ntrap \"exit 0\" 15\n\nexec \"$@\"\nwhile sleep 1 & wait $!; do :; done",
+		"-"
+	],
+	"State": {
+		"Status": "running",
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"Dead": false,
+		"Pid": 20395,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2022-10-28T08:53:11.447585497Z",
+		"FinishedAt": "2022-10-28T08:52:36.986998057Z"
+	},
+	"Image": "sha256:8e074a25b9445ff8b7d376549fc295e679aaa6ad2bf20cfc4328b2b24d0fc190",
+	"ResolvConfPath": "/var/lib/docker/containers/895627a40542e073b38e74b67f1d2ba33274e935312a30ad4bfea9316b9c1ec5/resolv.conf",
+	"HostnamePath": "/var/lib/docker/containers/895627a40542e073b38e74b67f1d2ba33274e935312a30ad4bfea9316b9c1ec5/hostname",
+	"HostsPath": "/var/lib/docker/containers/895627a40542e073b38e74b67f1d2ba33274e935312a30ad4bfea9316b9c1ec5/hosts",
+	"LogPath": "/var/lib/docker/containers/895627a40542e073b38e74b67f1d2ba33274e935312a30ad4bfea9316b9c1ec5/895627a40542e073b38e74b67f1d2ba33274e935312a30ad4bfea9316b9c1ec5-json.log",
+	"Name": "/admiring_austin",
+	"RestartCount": 0,
+	"Driver": "overlay2",
+	"Platform": "linux",
+	"MountLabel": "",
+	"ProcessLabel": "",
+	"AppArmorProfile": "",
+	"ExecIDs": [
+		"32566d9c66214c3ded71bc032cc90bbdd34a434fc68e4dd1c5cec69068e33a06",
+		"3d4bf9a7b9d702a633426bff2423da033c01a5374822f06bb48b5c77cca1a13a",
+		"5bd7dd377ede4dcaf4b80ac8318b2089d1bc0be986639258d4a8ad7251dbb0b2",
+		"466bf83fdf3d5bff5c768d2e9144f046221409c824cf2cc67564ad5408157154",
+		"af10d78d413b232ec6507e8f63bc248b13c64e4952e99658a841dd77fd80ec98",
+		"ed47ae3d2b7cfe30a62575b9918eae79feb7287c84194fe4437b2ebb2247970f"
+	],
+	"HostConfig": {
+		"Binds": null,
+		"ContainerIDFile": "",
+		"LogConfig": {
+			"Type": "json-file",
+			"Config": {}
+		},
+		"NetworkMode": "host",
+		"PortBindings": {},
+		"RestartPolicy": {
+			"Name": "no",
+			"MaximumRetryCount": 0
+		},
+		"AutoRemove": false,
+		"VolumeDriver": "",
+		"VolumesFrom": null,
+		"CapAdd": null,
+		"CapDrop": null,
+		"CgroupnsMode": "host",
+		"Dns": [],
+		"DnsOptions": [],
+		"DnsSearch": [],
+		"ExtraHosts": null,
+		"GroupAdd": null,
+		"IpcMode": "private",
+		"Cgroup": "",
+		"Links": null,
+		"OomScoreAdj": 0,
+		"PidMode": "",
+		"Privileged": false,
+		"PublishAllPorts": false,
+		"ReadonlyRootfs": false,
+		"SecurityOpt": null,
+		"UTSMode": "",
+		"UsernsMode": "",
+		"ShmSize": 67108864,
+		"Runtime": "runc",
+		"ConsoleSize": [
+			24,
+			80
+		],
+		"Isolation": "",
+		"CpuShares": 0,
+		"Memory": 0,
+		"NanoCpus": 0,
+		"CgroupParent": "",
+		"BlkioWeight": 0,
+		"BlkioWeightDevice": [],
+		"BlkioDeviceReadBps": null,
+		"BlkioDeviceWriteBps": null,
+		"BlkioDeviceReadIOps": null,
+		"BlkioDeviceWriteIOps": null,
+		"CpuPeriod": 0,
+		"CpuQuota": 0,
+		"CpuRealtimePeriod": 0,
+		"CpuRealtimeRuntime": 0,
+		"CpusetCpus": "",
+		"CpusetMems": "",
+		"Devices": [],
+		"DeviceCgroupRules": null,
+		"DeviceRequests": null,
+		"KernelMemory": 0,
+		"KernelMemoryTCP": 0,
+		"MemoryReservation": 0,
+		"MemorySwap": 0,
+		"MemorySwappiness": null,
+		"OomKillDisable": false,
+		"PidsLimit": null,
+		"Ulimits": null,
+		"CpuCount": 0,
+		"CpuPercent": 0,
+		"IOMaximumIOps": 0,
+		"IOMaximumBandwidth": 0,
+		"Mounts": [
+			{
+				"Type": "bind",
+				"Source": "c:\\Users\\KevinSpannaus\\Desktop\\CarrierTronicQt",
+				"Target": "/workspaces/CarrierTronicQt",
+				"Consistency": "cached"
+			},
+			{
+				"Type": "bind",
+				"Source": "C:\\Users\\KevinSpannaus/.moses",
+				"Target": "/home/torizon/.moses"
+			},
+			{
+				"Type": "bind",
+				"Source": "//var/run/docker.sock",
+				"Target": "/var/run/docker.sock"
+			},
+			{
+				"Type": "volume",
+				"Source": "vscode",
+				"Target": "/vscode"
+			}
+		],
+		"MaskedPaths": [
+			"/proc/asound",
+			"/proc/acpi",
+			"/proc/kcore",
+			"/proc/keys",
+			"/proc/latency_stats",
+			"/proc/timer_list",
+			"/proc/timer_stats",
+			"/proc/sched_debug",
+			"/proc/scsi",
+			"/sys/firmware"
+		],
+		"ReadonlyPaths": [
+			"/proc/bus",
+			"/proc/fs",
+			"/proc/irq",
+			"/proc/sys",
+			"/proc/sysrq-trigger"
+		]
+	},
+	"GraphDriver": {
+		"Data": {
+			"LowerDir": "/var/lib/docker/overlay2/69ee9a677c494020e2d50158852e4ee56c91bb8a20bba1c7884780dcd3a87597-init/diff:/var/lib/docker/overlay2/9nernx5ba5m7c95hq0z7gb9vw/diff:/var/lib/docker/overlay2/3iiol1v1gdv4jnawzvsl12ao0/diff:/var/lib/docker/overlay2/ca43bb4e24cb16809b9338067369ba9ee8f08c49758d9b902fa46cc341a25d1b/diff:/var/lib/docker/overlay2/ca6a09902ca99436f2dbe5a7a758de97f5f033fc336871030152f35819aaf129/diff:/var/lib/docker/overlay2/a681c3ce1feb6ab9ffdfa6f98e06e399f8e4d7a4e2aaaebf5ed1a141b841ecb2/diff:/var/lib/docker/overlay2/763c96730857bb62ed25adf3f26d14f70a4b646a4b8b7fa9651ff73e2b531804/diff:/var/lib/docker/overlay2/2413a3066d97a07d19f1c84a38360cff5785bb0682f2610c72cd3282b275bed8/diff:/var/lib/docker/overlay2/b4f818725eba51936d441675ec9cbd06d4680818a9500a139ff677ce69b57afd/diff:/var/lib/docker/overlay2/92c9ce2af4a3ace6959ef5a0ac85eefec755679185667e6e594a256244605d4b/diff:/var/lib/docker/overlay2/6f372e303c856dcdf8c59387bd900a51c275702c761ee9f8d98f7ef8804c8bb9/diff:/var/lib/docker/overlay2/6adc63de0ad4e0fc8727a8f520d3881cc225e86be0128a77be84d5bb210f578f/diff:/var/lib/docker/overlay2/a65f47e8cc804fa96d840a334f2de37f7f471dd95af839a66ab2c9c27d716323/diff:/var/lib/docker/overlay2/f125b01a302181b0f9baf3b7f33512c38aa1373fd9789e54b630a540385dfbbe/diff:/var/lib/docker/overlay2/ae03d403acfa5406d6ab8a95298800866684dea7207983da08cf7fae5411facf/diff:/var/lib/docker/overlay2/b379478eb9b57a9c092e21a9f0d40c6d98c9c7c3149f768dab37a6f790018bc2/diff:/var/lib/docker/overlay2/8b75e727a49ede4426fe433ba957bf39b9083177b370fc4092c4a406d319226d/diff",
+			"MergedDir": "/var/lib/docker/overlay2/69ee9a677c494020e2d50158852e4ee56c91bb8a20bba1c7884780dcd3a87597/merged",
+			"UpperDir": "/var/lib/docker/overlay2/69ee9a677c494020e2d50158852e4ee56c91bb8a20bba1c7884780dcd3a87597/diff",
+			"WorkDir": "/var/lib/docker/overlay2/69ee9a677c494020e2d50158852e4ee56c91bb8a20bba1c7884780dcd3a87597/work"
+		},
+		"Name": "overlay2"
+	},
+	"Mounts": [
+		{
+			"Type": "bind",
+			"Source": "C:\\Users\\KevinSpannaus/.moses",
+			"Destination": "/home/torizon/.moses",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "//var/run/docker.sock",
+			"Destination": "/var/run/docker.sock",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "volume",
+			"Name": "vscode",
+			"Source": "/var/lib/docker/volumes/vscode/_data",
+			"Destination": "/vscode",
+			"Driver": "local",
+			"Mode": "z",
+			"RW": true,
+			"Propagation": ""
+		},
+		{
+			"Type": "bind",
+			"Source": "c:\\Users\\KevinSpannaus\\Desktop\\CarrierTronicQt",
+			"Destination": "/workspaces/CarrierTronicQt",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		}
+	],
+	"Config": {
+		"Hostname": "docker-desktop",
+		"Domainname": "",
+		"User": "root",
+		"AttachStdin": false,
+		"AttachStdout": true,
+		"AttachStderr": true,
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"CXX=aarch64-linux-gnu-g++",
+			"LD=aarch64-linux-gnu-ld",
+			"QT_INCLUDES=/usr/include/aarch64-linux-gnu/qt5",
+			"CROSS_COMPILE=aarch64-linux-gnu-",
+			"QMAKE=aarch64-linux-gnu-qmake",
+			"AR=aarch64-linux-gnu-ar",
+			"AS=aarch64-linux-gnu-as",
+			"CC=aarch64-linux-gnu-gcc",
+			"CPP=aarch64-linux-gnu-cpp",
+			"STRIP=aarch64-linux-gnu-strip",
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+			"PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/lib/aarch64-linux-gnu/pkgconfig",
+			"DEBIAN_FRONTEND=noninteractive"
+		],
+		"Cmd": [
+			"-c",
+			"echo Container started\ntrap \"exit 0\" 15\n\nexec \"$@\"\nwhile sleep 1 & wait $!; do :; done",
+			"-"
+		],
+		"Image": "vsc-carriertronicqt-76104d40bc6314e1f2b0071b057ad4f8",
+		"Volumes": null,
+		"WorkingDir": "",
+		"Entrypoint": [
+			"/bin/sh"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"container.name": "debian-cross-toolchain-arm64",
+			"container.version": "2.7.3-20220917",
+			"devcontainer.local_folder": "c:\\Users\\KevinSpannaus\\Desktop\\CarrierTronicQt",
+			"devcontainer.metadata": "{\"postCreateCommand\":\"true\",\"customizations\":{\"vscode\":{\"extensions\":[\"ms-vscode.cpptools\",\"Toradex.torizon\"]}},\"mounts\":[\"source=${localEnv:HOME}${localEnv:USERPROFILE}/.moses,target=/home/torizon/.moses,type=bind\",\"source=//var/run/docker.sock,target=/var/run/docker.sock,type=bind\"],\"containerEnv\":{\"AR\":\"aarch64-linux-gnu-ar\",\"AS\":\"aarch64-linux-gnu-as\",\"CC\":\"aarch64-linux-gnu-gcc\",\"CXX\":\"aarch64-linux-gnu-g++\",\"CPP\":\"aarch64-linux-gnu-cpp\",\"STRIP\":\"aarch64-linux-gnu-strip\",\"LD\":\"aarch64-linux-gnu-ld\",\"CROSS_COMPILE\":\"aarch64-linux-gnu-\",\"QMAKE\":\"aarch64-linux-gnu-qmake\",\"QT_INCLUDES\":\"/usr/include/aarch64-linux-gnu/qt5\"},\"remoteUser\":\"torizon\"}",
+			"git.branch": "bullseye",
+			"git.hash": "9ecbdeec0021fc9dc9aead2a5fb54c8ecc4dcec8",
+			"pipeline.id": "46078"
+		}
+	},
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "45f7f9195b5d226d863e29a71028e593de25e459fd5aafd8e5378284133e6b6d",
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"Ports": {},
+		"SandboxKey": "/var/run/docker/netns/default",
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"EndpointID": "",
+		"Gateway": "",
+		"GlobalIPv6Address": "",
+		"GlobalIPv6PrefixLen": 0,
+		"IPAddress": "",
+		"IPPrefixLen": 0,
+		"IPv6Gateway": "",
+		"MacAddress": "",
+		"Networks": {
+			"host": {
+				"IPAMConfig": null,
+				"Links": null,
+				"Aliases": null,
+				"NetworkID": "d2ed27392fed6bd64c2f59f8a5e8d778098df70422afe3532f98eb9215aa7a33",
+				"EndpointID": "663a55acfedc345db03f6ab2a5f08d5d5ea9de7a5ebe8989659358f5729280e0",
+				"Gateway": "",
+				"IPAddress": "",
+				"IPPrefixLen": 0,
+				"IPv6Gateway": "",
+				"GlobalIPv6Address": "",
+				"GlobalIPv6PrefixLen": 0,
+				"MacAddress": "",
+				"DriverOpts": null
+			}
+		}
+	},
+	"Ports": []
+}

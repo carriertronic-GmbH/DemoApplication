@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+        <file>qml/main.qml</file>
+        <file>qml/General/Icon.qml</file>
+        <file>qml/General/IconButton.qml</file>
+        <file>qml/General/MaterialIcon.qml</file>
+        <file>qml/Dashboard/Dashboard.qml</file>
+        <file>qml/MainHeader.qml</file>
+        <file>qml/General/Clock.qml</file>
+        <file>qml/Dashboard/DashboardButton.qml</file>
+        <file>qml/DisplayTest/DisplayTest.qml</file>
+        <file>qml/DisplayTest/DisplayTestButton.qml</file>
+        <file>qml/MultiTouch/MultiTouch.qml</file>
+        <file>qml/MultiTouch/MultiTouchComponent.qml</file>
+        <file>qml/MultiTouch/MultiTouchPointView.qml</file>
+        <file>qml/MultiTouch/MultiTouchIndicator.qml</file>
+        <file>qml/Diashow/Diashow.qml</file>
+        <file>qml/CAN/CAN.qml</file>
+        <file>qml/CAN/CANDump.qml</file>
+        <file>qml/Settings/Settings.qml</file>
+        <file>qml/Settings/SettingsBrightness.qml</file>
+        <file>qml/Settings/SettingsNetwork.qml</file>
+        <file>qml/Settings/SettingsFlash.qml</file>
+        <file>qml/Terminal/Terminal.qml</file>
+        <file>qml/Diashow/Gallery/Gallery.qml</file>
+        <file>qml/Diashow/SlideShow/SlideShow.qml</file>
+    </qresource>
+</RCC>

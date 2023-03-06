@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"torizon.appfolder": "appconfig_0",
+		"torizon.configuration": "debug"
+	}
+}
