@@ -15,7 +15,8 @@ Page {
         nameFilters: ["*.jpg", "*.png"]
         caseSensitive: false
         showDirs: false
-        folder : "file:///home/root/images/"
+        //folder : "file:///home/root/images/"
+        folder : "file:///home/kevin/data/01_bm_ui/00-ui/002-brauen/"
         onCountChanged: console.log(count)
     }
 
@@ -37,11 +38,50 @@ Page {
             anchors.fill: parent
             fillMode: Image.PreserveAspectCrop
 
-            MouseArea{
-                anchors.fill: parent
-                onClicked: {
-                    root.StackView.view.pop()
-                }
+            MouseArea {
+                        anchors.fill: parent
+                        preventStealing: true
+                        property real velocity: 0.0
+                        property int xStart: 0
+                        property int xPrev: 0
+                        property bool tracing: false
+                        onPressed: {
+                            xStart = mouse.x
+                            xPrev = mouse.x
+                            velocity = 0
+                            tracing = true
+                            console.log( " pressed  "+xStart)
+                            console.log( " pressed  "+xPrev)
+                        }
+                        onPositionChanged: {
+                            if ( !tracing ) return
+                            var currVel = (mouse.x-xPrev)
+                            velocity = (velocity + currVel)/2.0
+                            xPrev = mouse.x
+                            if ( velocity > 15 && mouse.x > parent.width*0.2 ) {
+                                tracing = false
+                                console.log( " right swipe  ")
+                                // SWIPE DETECTED !! EMIT SIGNAL or DO your action
+                            }
+                            console.log(mouse.x > parent.width*0.2 * -1)
+                            if (velocity < -15 && mouse.x > parent.width*0.2 * -1 ) {
+                                // SWIPE DETECTED !! EMIT SIGNAL or DO your action
+                                console.log("left swipe")
+                            }
+                        }
+                        onReleased: {
+                            tracing = false
+                            console.log(velocity)
+                            if ( velocity > 15 && mouse.x > parent.width*0.2 ) {
+                                // SWIPE DETECTED !! EMIT SIGNAL or DO your action
+                                console.log("abccccc")
+                                switchImage.restart()
+                            }
+
+                            else {
+                                root.StackView.view.pop()
+                            }
+                        }
             }
         }
     }
@@ -77,7 +117,7 @@ Page {
         }
 
         PauseAnimation {
-            duration: 10000
+            duration: 5000
         }
     }
 }
