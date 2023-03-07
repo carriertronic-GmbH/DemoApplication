@@ -15,8 +15,7 @@ Page {
         nameFilters: ["*.jpg", "*.png"]
         caseSensitive: false
         showDirs: false
-        //folder : "file:///home/root/images/"
-        folder : "file:///home/kevin/data/01_bm_ui/00-ui/002-brauen/"
+        folder : "file:///home/root/images/"
         onCountChanged: console.log(count)
     }
 
@@ -63,11 +62,6 @@ Page {
                                 console.log( " right swipe  ")
                                 // SWIPE DETECTED !! EMIT SIGNAL or DO your action
                             }
-                            console.log(mouse.x > parent.width*0.2 * -1)
-                            if (velocity < -15 && mouse.x > parent.width*0.2 * -1 ) {
-                                // SWIPE DETECTED !! EMIT SIGNAL or DO your action
-                                console.log("left swipe")
-                            }
                         }
                         onReleased: {
                             tracing = false
@@ -82,9 +76,9 @@ Page {
                                 root.StackView.view.pop()
                             }
                         }
+                    }
+                }
             }
-        }
-    }
 
     //Animations
     SequentialAnimation{
@@ -96,7 +90,7 @@ Page {
             target: image
             property: "opacity"
             to: 0
-            duration: 350
+            duration: 1000
         }
         ScriptAction{
             script: {
@@ -113,11 +107,11 @@ Page {
             property: "opacity"
             from: 0
             to: 1
-            duration: 350
+            duration: 2000
         }
 
         PauseAnimation {
-            duration: 5000
+            duration: 6000
         }
     }
 }

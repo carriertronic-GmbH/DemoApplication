@@ -8,7 +8,7 @@ import "qrc:/qml/Dashboard/"
 ApplicationWindow {
     id: window
     width: 1280
-    height: 720
+    height: 800
     visible: true
     visibility: "FullScreen"
     title: qsTr("Carrier Tronic Demo")
