@@ -121,6 +121,6 @@ Item{
         anchors.bottom: parent.bottom
         width: parent.width
         height: 2
-        color: "green"
+        color: "gray"
     }
 }
