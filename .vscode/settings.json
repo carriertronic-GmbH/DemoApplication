@@ -23,4 +23,6 @@
   "docker_registry": "",
   "docker_login": "dominincpoeschko",
   "tcb.fleetName": "f1",
+  "tcb.clientId": "",
+  "tcb.clientSecret": ""
 }
