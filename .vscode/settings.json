@@ -20,9 +20,9 @@
     "DOCKER_HOST": ""
   },
   "docker_tag": "ct",
-  "docker_registry": "",
+  "docker_registry": "foo",
   "docker_login": "dominincpoeschko",
   "tcb.fleetName": "f1",
-  "tcb.clientId": "",
-  "tcb.clientSecret": ""
+  "tcb.clientId": "foo",
+  "tcb.clientSecret": "foo"
 }
