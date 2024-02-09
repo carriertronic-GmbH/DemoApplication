@@ -1,0 +1,26 @@
+{
+  "qtForPython.rcc.liveExecution.enabled": false,
+  "qtForPython.qmlls.enabled": false,
+  "torizon_psswd": "torizon",
+  "torizon_login": "torizon",
+  "torizon_workspace": "${workspaceFolder}",
+  "torizon_debug_port": "",
+  "torizon_debug_ssh_port": "2231",
+  "torizon_debug_port2": "2232",
+  "torizon_debug_port3": "2233",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "torizon_gpu": "-vivante",
+  "torizon_arch": "aarch64",
+  "wait_sync": "1",
+  "torizon_run_as": "torizon",
+  "torizon_app_root": "/home/torizon/app",
+  "tcb.packageName": "ctDemoApp",
+  "tcb.version": "3.8.1",
+  "docker.environment": {
+    "DOCKER_HOST": ""
+  },
+  "docker_tag": "ct",
+  "docker_registry": "",
+  "tcb.clientId": "api-v2_30e07f8a_99dc0b89-adf2-43c4-bc25-6ad5d8012156",
+  "tcb.clientSecret": "secret"
+}
