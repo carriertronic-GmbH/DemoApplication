@@ -21,7 +21,7 @@
   },
   "docker_tag": "ct",
   "docker_registry": "",
-  "docker_login": "dominincpoeschko",
+  "docker_login": "dominicpoeschko",
   "tcb.fleetName": "f1",
   "tcb.clientId": "empty",
   "tcb.clientSecret": "empty"
