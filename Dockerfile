@@ -147,6 +147,7 @@ RUN apt-get -q -y update && \
     qml6-module-qtquick-controls \
     qml6-module-qtquick-layouts \
     qml6-module-qtquick-templates \
+    libqt6serialport6-dev \
 # DO NOT REMOVE THIS LABEL: this is used for VS Code automation
     # __torizon_packages_prod_start__
     # __torizon_packages_prod_end__
