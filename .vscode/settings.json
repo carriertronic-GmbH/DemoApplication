@@ -21,6 +21,6 @@
   },
   "docker_tag": "ct",
   "docker_registry": "",
-  "tcb.clientId": "api-v2_30e07f8a_99dc0b89-adf2-43c4-bc25-6ad5d8012156",
-  "tcb.clientSecret": "secret"
+  "docker_login": "dominincpoeschko",
+  "tcb.fleetName": "f1",
 }

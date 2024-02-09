@@ -1,5 +1,22 @@
 version: "3.9"
 services:
+  ct-demo-app:
+    depends_on:
+    - weston
+    volumes:
+    - source: /tmp
+      target: /tmp
+      type: bind
+    - source: /dev
+      target: /dev
+      type: bind
+    device_cgroup_rules:
+    - c 4:0 rmw
+    - c 4:7 rmw
+    - c 13:* rmw
+    - c 199:* rmw
+    - c 226:* rmw
+    image: dominicpoeschko/ct-demo-app:ct
   weston:
     volumes:
     - source: /tmp
@@ -11,9 +28,12 @@ services:
     - source: /run/udev
       target: /run/udev
       type: bind
+    network_mode: host
     cap_add:
     - CAP_SYS_TTY_CONFIG
-    network_mode: host
+    image: torizon/weston-vivante:3
+    environment:
+    - ACCEPT_FSL_EULA=1
     device_cgroup_rules:
     - c 4:0 rmw
     - c 4:1 rmw
@@ -21,23 +41,3 @@ services:
     - c 13:* rmw
     - c 199:* rmw
     - c 226:* rmw
-    image: torizon/weston-vivante:3
-    environment:
-    - ACCEPT_FSL_EULA=1
-  ct-demo-app:
-    image: dominicpoeschko/ct-demo-app:ct
-    device_cgroup_rules:
-    - c 4:0 rmw
-    - c 4:7 rmw
-    - c 13:* rmw
-    - c 199:* rmw
-    - c 226:* rmw
-    volumes:
-    - source: /tmp
-      target: /tmp
-      type: bind
-    - source: /dev
-      target: /dev
-      type: bind
-    depends_on:
-    - weston
