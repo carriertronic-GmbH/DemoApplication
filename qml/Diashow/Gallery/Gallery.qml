@@ -26,7 +26,7 @@ Page {
         nameFilters: ["*.jpg", "*.png"]
         caseSensitive: false
         showDirs: false
-        folder : "file:///home/root/images/"
+        folder : "qrc:/resources/Images/diashow"
     }
 
     Label{

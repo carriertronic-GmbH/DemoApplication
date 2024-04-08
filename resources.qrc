@@ -85,5 +85,16 @@
         <file>resources/Fonts/Spartan-SemiBold.ttf</file>
         <file>resources/Fonts/Spartan-Thin.ttf</file>
         <file>resources/Images/chess-print.jpg</file>
+        <file>resources/Images/diashow/autumn_forest_park_128379_1280x800.jpg</file>
+        <file>resources/Images/diashow/bay_blue_water_height_53383_1280x800.jpg</file>
+        <file>resources/Images/diashow/bench_autumn_park_125807_1280x800.jpg</file>
+        <file>resources/Images/diashow/black_cat_muzzle_look_117261_1280x800.jpg</file>
+        <file>resources/Images/diashow/boat_mountains_lake_135258_1280x800.jpg</file>
+        <file>resources/Images/diashow/books_shelf_collection_119979_1280x800.jpg</file>
+        <file>resources/Images/diashow/forest_fog_trees_132037_1280x800.jpg</file>
+        <file>resources/Images/diashow/germany_park_cathedral_59443_1280x800.jpg</file>
+        <file>resources/Images/diashow/landscape_mountains_sun_140434_1280x800.jpg</file>
+        <file>resources/Images/diashow/wave_surf_sea_102223_1280x800.jpg</file>
+        <file>resources/Images/diashow/winter_gazebo_snow_99329_1280x800.jpg</file>
     </qresource>
 </RCC>
