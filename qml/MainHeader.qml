@@ -17,11 +17,11 @@ Item{
 
         Item{
             Layout.preferredWidth: 84
-            Layout.preferredHeight: 84
+            Layout.preferredHeight: root.height
 
             Image {
                 width: parent.width
-                height: parent.height
+                height: root.height
                 visible: stackview.depth === 1
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/resources/Icons/carriertronicLogo-6.png"
@@ -30,7 +30,7 @@ Item{
 
             IconButton{
                 width: parent.width
-                height: parent.height
+                height: root.height
                 visible: stackview.depth > 1
                 materialIcon: "mdi-chevron-left"
                 materialIconColor: "white"

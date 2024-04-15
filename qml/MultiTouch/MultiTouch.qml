@@ -37,7 +37,7 @@ Page{
             onPressed: {
                 handImage.visible= false
                 touchPoints.forEach((touchPoint)=>{
-                                        if(touchPoint.x<64 && touchPoint.y<64){
+                                        if(touchPoint.x<84 && touchPoint.y<84){
                                             root.StackView.view.pop()
                                         }
                                     })
